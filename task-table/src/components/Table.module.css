@@ -1,0 +1,25 @@
+.thead {
+  background-color: #36304a;
+  color: #fff;
+  padding: 120px;
+}
+
+.tr {
+  background-color: #fff;
+  color: #36304a;
+}
+
+.center_text {
+  text-align: center;
+
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.left_text {
+  text-align: left;
+  padding: 1rem;
+
+  padding-left: 30px;
+  padding-right: 30px;
+}
