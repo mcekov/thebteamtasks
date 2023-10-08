@@ -1,22 +1,9 @@
 import styles from "./Table.module.css";
 import useTableDataList from "../hooks/useTableDataList";
 import TableItem from "./TableItem";
+import React from "react";
 
-export type Props = {
-  id: string;
-  user: {
-    id: string;
-    isActive: boolean;
-    name: string;
-    username: string;
-    email: string;
-    address: {
-      city: string;
-    };
-  };
-};
-
-const Table = () => {
+const Table: React.FC = () => {
   const [users] = useTableDataList("users");
 
   return (
@@ -32,7 +19,7 @@ const Table = () => {
         </tr>
       </thead>
       <tbody>
-        {users.map((user: Props) => (
+        {users.map((user: { id: string }) => (
           <TableItem key={user.id} user={user} />
         ))}
       </tbody>

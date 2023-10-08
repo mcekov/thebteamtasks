@@ -1,8 +1,4 @@
-export interface QueryKey {
-  queryKey: string;
-}
-
-const fetchTableDataList = async ({ queryKey }: QueryKey) => {
+const fetchTableDataList = async ({ queryKey }) => {
   const users = queryKey[1];
 
   if (!users) {

@@ -1,6 +1,17 @@
 import styles from "./Table.module.css";
-import { Props } from "./Table";
 import { useState } from "react";
+
+type Props = {
+  user: {
+    id: string;
+    name: string;
+    username: string;
+    email: string;
+    address: {
+      city: string;
+    };
+  };
+};
 
 const TableItem = ({ user }: Props) => {
   const [isActive, setIsActive] = useState(false);
@@ -20,7 +31,7 @@ const TableItem = ({ user }: Props) => {
       <td className={styles.center_text}>
         <div>
           <input
-            onClick={handleColorChange}
+            onChange={handleColorChange}
             type="checkbox"
             id={user.id}
             name="select"

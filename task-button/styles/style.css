@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -60,8 +61,8 @@ body {
     linear-gradient(#8b8b8b, #eaeaea) border-box;
   border: 1px solid transparent;
   border-radius: 10px;
-  height: 42px;
   width: 200px;
+  height: 42px;
   position: relative;
 }
 
